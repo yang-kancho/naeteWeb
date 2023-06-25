@@ -1,0 +1,74 @@
+/* .sns {
+  border: 1px solid brown;
+  list-style-type: none;
+  max-width: 60%;
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns li {
+  /* 간격을 조정  */
+/* border: 1px solid yellow;
+  width: 40px;
+  height: 40px;
+} */
+
+.mbbSec {
+  /* border: 1px solid red; */
+  max-width: 45%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.goBack {
+  background-image: url("../img/return.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shareUrl {
+  background-image: url("../img/icon-url.png");
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rbbSec {
+  /* border: 1px solid red; */
+  max-width: 45%;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+/* 
+.url {
+  background-image: url("../img/icon-url.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.twitter {
+  background-image: url("../img/icon-twitter.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.facebook {
+  background-image: url("../img/icon-facebook.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.kakao {
+  background-image: url("../img/icon-kakao.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}

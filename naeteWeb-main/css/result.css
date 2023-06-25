@@ -1,0 +1,144 @@
+#result {
+  margin: auto;
+  display: none;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  /* border: 1px solid blue; */
+}
+
+.resultname {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 15px;
+  /* border: 1px solid green; */
+}
+
+.resultDesc {
+  /* border: 1px solid blue; */
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+
+/*kakao button*/
+.kakao {
+  color: #000000;
+  background-color: #fee500;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.kakao:hover,
+.kakao:focus {
+  background-color: #fee510;
+  color: #000000;
+}
+
+/*gohome button*/
+.gohome {
+  background-color: blue;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+/*결과보기 버튼 및 광고 section*/
+#viewResult{
+  display:none;
+  height:90vh;
+}
+.setResultDisplay{
+  padding-top:8vh;
+  padding-bottom:3vh;
+  background-color:#fff;
+  width:100%;
+  height:15vh;
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  flex-direction: column;
+}
+#resultComment{
+  margin-top:10px;
+}
+.resultBtnSection{
+  background-color:#e9e9e9;
+  width:100%;
+  height:20vh;
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  flex-direction: column;
+}
+.resultBtn{
+  display:block;
+  background-color: #446FF2;
+  color:#fff;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  width:50%;
+  letter-spacing: .1em;
+  height: 10vh;
+  margin:auto;
+  box-sizing: border-box;
+  text-align:center;
+}
+.resultShare{
+  height:20%;
+  text-align:center;
+}
+.resultShare > div{
+  margin-top:20px;
+  padding:20px;
+  display:inline-block;
+  background-color:#e6e6e6;  
+}
+.resultShareBtn{
+  display:flex;
+  justify-content: space-between;
+  width:20vh;
+  margin-top:2vh;
+}
+.resultBtn:hover{
+  background-color:#2256f2;
+}
+.viewResultBottom{
+  text-align:center;
+  padding:5vh 0;
+  background-color:#fff;
+}
+.viewResultBottom button{
+  background-color:#446FF2;
+  color:#fff;
+  width:40vh;
+  height:6vh;
+  padding-top:8px;
+}
+.viewResultBottom button:hover{
+  background-color:#2256f2;
+}
+.gohome:hover,
+.gohome:focus {
+  background-color: whitesmoke;
+  color: #000000;
+}
+
+.testShareTitle {
+  /* border: 1px solid green; */
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+
+.resultHead {
+  /* border: 1px solid brown; */
+  padding-top: 85px;
+  /* header 때문에 발생하는 잘림 방지를 위해 여백 추가 */
+}

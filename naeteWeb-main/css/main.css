@@ -1,0 +1,12 @@
+#main {
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  /* border: 1px solid green; */
+}
+
+#main img {
+  margin: auto;
+  width: 97%;
+  border-radius: 10px;
+}
