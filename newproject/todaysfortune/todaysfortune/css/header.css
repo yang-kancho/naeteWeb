@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  /* border: 1px dotted brown; */
+  /* 수직 중앙 정렬하기 */
+  position: fixed;
+  height: 60px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+  /* position fixed 때문에 부모 요소로부터 독립되어  */
+}
+
+header div {
+  background-color: #fff;
+}
+header div img {
+  background-color: #fff;
+  /* width: 20%; */
+  /* min-width: 80px; */
+  max-width: 150px;
+  /* 수평, 수직 중앙 정렬하기 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px dotted red; */
+}

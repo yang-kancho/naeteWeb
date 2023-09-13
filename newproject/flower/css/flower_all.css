@@ -1,0 +1,77 @@
+* {
+  margin: auto;
+  color: #a48d7a;
+  background-color: #f8f7f5;
+}
+
+body {
+  font-family: "KoPubWorldBatang", "NanumSquare ";
+  background-color: #f0f0f2;
+  width: 100vw;
+  max-width: 768px;
+  margin: auto;
+}
+/* https://wess.tistory.com */
+
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 400;
+  src: url(NanumSquareR.eot);
+  src: local("☺"), url(NanumSquareR.eot?#iefix) format("embedded-opentype"),
+    url(NanumSquareR.woff2) format("woff2"),
+    url(NanumSquareR.woff) format("woff"),
+    url(NanumSquareR.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "KoPubWorldBatang";
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "KoPubWorldBatang";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "KoPubWorldBatang";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

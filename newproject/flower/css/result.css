@@ -1,0 +1,244 @@
+#result {
+  margin: auto;
+  display: none;
+  /* background-color: black; */
+  width: 100%;
+  text-align: center;
+  padding-top: 60px;
+  /* border: 1px solid blue; */
+}
+
+.resultname {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 15px;
+  /* border: 1px solid green; */
+}
+
+.resultDesc {
+  /* border: 1px solid blue; */
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+#result p {
+  padding-top: 15px;
+}
+
+/*kakao button*/
+.kakao {
+  color: #000000;
+  background-color: #fee500;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.kakao:hover,
+.kakao:focus {
+  background-color: #fee510;
+  color: #000000;
+}
+
+/*gohome button*/
+.gohome {
+  background-color: blue;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+/*결과보기 버튼 및 광고 section*/
+#viewResult {
+  display: none;
+}
+
+.setResultDisplay {
+  padding-top: 75px;
+  padding-bottom: 3vh;
+  /* background-color: #fff; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#resultComment {
+  margin-top: 10px;
+  padding: 0 15px;
+  color: #222;
+  font-size: 1em;
+}
+.resultBtnSection {
+  /* background-color: white; */
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+.resultBtnSection > div {
+  position: relative;
+}
+#viewResultBt,
+#viewResultBtn {
+  width: 80vw;
+  max-width: 614px;
+  /* background-color: black; */
+}
+
+#advertisementClose {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: block;
+  border:none;
+  width: 25px;
+  height: 25px;
+  padding:0;
+  text-align:center;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+  color: rgba(0,0,0,0.8);
+  border-radius:50%;
+}
+#viewResultBtn {
+  display: none;
+}
+#viewResultBtn h4{
+  background-color:inherit;
+  color:#f7f7f7;
+  letter-spacing: 2px;
+}
+#viewResultBt h4 {
+  color:#fff;
+  background-color:inherit;
+}
+
+/* .resultBtn {
+  display: block;
+  background-color: #446ff2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  letter-spacing: 0.1em;
+  height: 50px;
+  padding-top: 5px;
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center;
+} */
+
+/* .resultBtn:hover {
+  background-color: #2256f2;
+} */
+
+.resultShare {
+  height: 20%;
+  text-align: center;
+  /* background-color: #fff; */
+}
+.downloadImg {
+  margin-bottom: 2.5vh;
+}
+.resultShare > div {
+  margin-top: 20px;
+  padding: 20px;
+  display: inline-block;
+  background-color: inherit;
+  border-radius: 10px;
+}
+.resultShareBtn {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 20vh;
+  margin-top: 2vh;
+  margin: auto;
+}
+
+.viewResultBottom {
+  text-align: center;
+  padding: 5vh 0;
+  background-color: #fff;
+}
+
+.viewResultBottom button {
+  background-color: #446ff2;
+  color: #fff;
+  /* width: 40vh;
+  height: 6vh;
+  padding-top: 8px;
+  border-radius: 10px; * */
+  /* border: 1px solid blue; */
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 80%;
+  font-size: 16px;
+}
+
+.viewResultBottom button:hover,
+.viewResultBottom button:focus {
+  color: white;
+}
+
+.resultShare button {
+  position: relative;
+}
+.resultShare button:hover::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(68, 111, 242, 0.1);
+}
+.viewResultBottom button:hover {
+  background-color: #2256f2;
+}
+.gohome:hover,
+.gohome:focus {
+  background-color: whitesmoke;
+  color: #000000;
+}
+
+.testShareTitle {
+  /* border: 1px solid green; */
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+
+
+.resultHead {
+  /* border: 1px solid brown; */
+  padding-top: 85px;
+  /* header 때문에 발생하는 잘림 방지를 위해 여백 추가 */
+}
+
+.kakao {
+  background-image: url("/img/icon-kakao.png");
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}

@@ -1,0 +1,209 @@
+* {
+  font-family: "Pretendard-Regular";
+  /* background-color: #f0f0f2; */
+  /* width: 100vw; */
+  /* margin: auto; */
+  /* border: 1px solid green; */
+  /* min-width: 375px; */
+  box-sizing: border-box;
+}
+body {
+  max-width: 480px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ChosunCentennial";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-size-lg: 2rem;
+  --font-size-md: 1.5rem;
+  --font-size-sm: 1rem;
+}
+
+/* @media (min-width: 480px) {
+  :root {
+    --font-size-lg: 2.75rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-lg: 3.5rem;
+    --font-size-md: 2.5rem;
+    --font-size-sm: 1.5rem;
+  }
+} */
+
+h1 {
+  font-size: var(--font-size-lg);
+}
+
+h2 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  font-size: var(--font-size-sm);
+}
+
+a {
+  font-size: var(--font-size-sm);
+}
+
+blockquote {
+  font-size: var(--font-size-md);
+}
+
+.hero {
+  font-size: var(--font-size-lg);
+}
+
+/* 이전에 있던 스타일은 그대로 두고 결과창에 대한 스타일을 추가합니다. */
+
+/* .resultItem {
+  margin-bottom: 20px;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  width:40%;
+  margin: 0 auto;
+} */
+/* 결과 섹션 시작 */
+#headTitle {
+  font-size: 26px;
+  font-weight: bold;
+  background-color: inherit;
+  text-align: center;
+}
+
+#resultContent {
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: inherit;
+  text-align: center;
+}
+.resultWrap {
+  width: 90%;
+  height: 100%;
+  margin: 30px auto;
+  text-align: center;
+  font-family: "ChosunCentennial";
+  background-color: unset;
+  display: none;
+  box-sizing: border-box;
+}
+
+.resultWrap p {
+  width: 95%;
+  /* margin:20px auto 5px auto; */
+  background-color: unset;
+  font-family: "ChosunCentennial";
+}
+
+.resultWrap h1 {
+  width: 95%;
+  background-color: unset;
+  margin: auto;
+  padding-bottom: 15px;
+  font-family: "ChosunCentennial";
+}
+#resultContainer {
+  width: 100%;
+  /* max-width: 500px; */
+  /* height:70%; */
+  margin: auto;
+  text-align: center;
+  padding: 3px 0 50px 0;
+  outline: 3px solid black;
+  display: block;
+  background-color: #fff;
+  position: relative;
+  background-position: top;
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#headContent1 {
+  padding-top: 15px;
+}
+.subTitle {
+  width: 95%;
+  background-color: unset;
+  margin: 30px auto 5px auto;
+  font-family: "ChosunCentennial";
+  font-size: 20px;
+}
+.subContent {
+  /* border: 1px solid red; */
+  background-color: unset;
+  font-family: "ChosunCentennial";
+  font-size: 16px;
+  text-align: left;
+  margin: 5px 15px 15px 15px;
+  padding: 0 15px;
+}
+#headContent1 {
+  background: unset;
+}
+
+/* 결과 섹션 종료 */
+/* 'hidden' 클래스를 이용하여 초기에 결과창을 숨깁니다. */
+.hidden {
+  display: none;
+}
+
+.capsule {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: unset;
+  display: none;
+}
+
+#capsule1 {
+  /* display:block; */
+  max-width:160px;
+  width: 30vw;
+}
+#capsule2 {
+  /* display:block; */
+  max-width:160px;
+  width: 30vw;
+}
+#capsule3 {
+  /* display:block; */
+  max-width:160px;
+  width: 100vw;
+  left: 45%;
+  transition: 1s all ease-out;
+  opacity: 0;
+}
+#coin {
+  position: absolute;
+  max-width:160px;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  width: 30vw;
+  transform: translate(-50%, -50%);
+  background-color: unset;
+  display: none;
+  transition: 3s all ease;
+}

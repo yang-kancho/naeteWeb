@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4QPVWF1JZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-T4QPVWF1JZ');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T7ZTVZW');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 운세</title>
+  <link rel="stylesheet" href="./css/main.css" >
+  <link rel="stylesheet" href="./css/style.css" >
+  <link rel="stylesheet" href="./css/header.css" >
+  <link rel="stylesheet" href="./css/container.css" >
+  <link rel="stylesheet" href="./css/howTo.css" >
+  <link rel="stylesheet" href="./css/result.css" >
+
+
+  <!--meta tag--->
+  <title>오늘의 운세</title>
+  <meta name="author" content="naete" />
+  <meta name="keywords" content="오늘의 운세 뽑기" />
+  <meta name="description" content="신통방통한 오늘의 운세 뽑기, 오늘 나의 하루는?" />
+
+  <!-- sns share -->
+  <meta property="og:url" content="https://naete.cafe24.com/contents/todaysfortune/todaysfortune.html" />
+  <meta property="og:title" content="오늘의 운세" />
+  <meta property="og:type" content="website" />
+  <!-- 이미지 http주의 -->
+  <meta property="og:image" content="https://naete.cafe24.com/contents/todaysfortune/img/thumbnail.png" />
+  <meta property="og:description" content="신통방통한 오늘의 운세 뽑기, 오늘 나의 하루는?" />
+
+  <!-- favicon--https://icon-icons.com/ -->
+  <link rel="shortcut icon" href="/img/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" href="/img/favicon.ico" />
+
+  <!--카카오톡 공유 메시지를 위한 sdk-->
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.2.0/kakao.min.js"
+    integrity="sha384-x+WG2i7pOR+oWb6O5GV5f1KN2Ko6N7PTGPS7UlasYWNxZMKQA63Cj/B2lbUmUfuC"
+    crossorigin="anonymous"></script>
+  <script>
+    Kakao.init('b7420a0773bf9242c371f09d8899ce4c'); // 사용하려는 앱의 JavaScript 키 입력
+  </script>
+</head>
+
+<body>
+  <!--header-->
+  <header>
+    <div>
+      <a href="/index.html"><img src="/img/logo.png" alt="로고"></img></a>
+    </div>
+  </header>
+  <img class="capsule" id="capsule1" src="./img/capsule1.png">
+  <img class="capsule" id="capsule2" src="./img/capsule2.png">
+  <img class="capsule" id="capsule3" src="./img/capsule3.png">
+  <img id="coin" src="./img/coin.png">
+  <section id="main">
+    <div id="contentsDetail">
+      <!-- <h1 class="detail_title">내 영혼의 강점 찾기</h1> -->
+      <div>
+        <img src="./img/main.png" alt="mainImage" class="img-fluid" />
+      </div>
+      <p class="detail_explain">
+        오늘 하루 나의 운세는 어떨까?</br>
+        신통방통한 캡슐 운세 뽑기를 온라인으로! </br>
+        아래 시작하기 버튼을 눌러 시작해 주세요.
+      </p>
+      <div class="categoryTag">
+        <p>#오늘의운세</p>
+        <p>#주의해야할것</p>
+        <p>#행운의물건</p>
+        <p>#귀인을만나는법</p>
+      </div>
+    </div>
+    <button id="startBt" type="button" class="" onclick="begin()">
+      시작하기
+    </button>
+    <div class="shareBox">
+      <div class="mbbSec">
+        <div>
+          <button class="shareUrl" onclick="copyUrl()"></button><br />
+          <label for="bt_share">공유하기</label>
+        </div>
+        <!-- <div>
+                  <button class="goBack" onclick="location.href = 'home.html';"></button><br />
+                  <label for="bt_back">뒤로가기</label>
+              </div> -->
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div id="howTo">
+      <div class="wrap">
+        <img src="./img/fortuneBox.png" alt="">
+        <div class="instructionwrap">
+          <audio id='capsuleSound' src='./img/Opening Plastic.mp3'></audio>
+          <audio id='capsuleSound2' src='./img/resultOpen.mp3'></audio>
+          <img class="instructionimg" src="./img/instruction.png" alt="">
+          <div class="instruction" id="fortuneText">2023년 계묘년 하루 운세 보는 방법</div>
+        </div>
+      </div>
+      <button id="nextBtn">다음</button>
+    </div>
+    <div class="hidden, resultWrap" id="resultView">
+      <div id = resultScreenCapture>
+        <p>오늘의 운세:</p>
+        <h1 id="headTitle"></h1>
+        <div id="resultContainer">
+          <p id="headContent1" class="subContent"></p>
+          <h2 class="subTitle">주의해야 하는 것</h2>
+          <p id="resultContent1" class="subContent"></p>
+          <h2 class="subTitle">행운을 가져다 주는 물건</h2>
+          <p id="resultContent2" class="subContent"></p>
+          <h2 class="subTitle">귀인을 만날 수 있는 방법</h2>
+          <p id="resultContent3" class="subContent"></p>
+        </div>
+      </div>
+      <button type="button" id="btn_download">❤︎ 결과 저장하기 ❤︎</button>
+      <div id="result-container"></div>
+      <div id="resultOthers">
+        <div id=shareSection>
+          <h3>테스트 공유하기</h3>
+          <div class="resultShareBtn">
+            <div>
+              <button class="shareUrl" href="" onclick="copyUrl()">
+                <span class="skip"></span>
+              </button>
+            </div>
+            <div>
+              <button class="kakao" href="" onclick="shareMessage()">
+              </button>
+            </div>
+          </div>
+          <div id=otherSection>
+            <button class="retryBtn" onClick="window.location.reload()">다시해보기!</button>
+            <button class="goHome" onclick="location.href ='/index.html';">다른 테스트 해보기!</button>
+          </div>
+        </div>
+      </div>
+      <script src="./js/script.js"></script>
+      <script src="./js/share.js"></script>
+      <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.2.0/kakao.min.js"
+        integrity="sha384-x+WG2i7pOR+oWb6O5GV5f1KN2Ko6N7PTGPS7UlasYWNxZMKQA63Cj/B2lbUmUfuC"
+        crossorigin="anonymous"></script>
+      <script>Kakao.init('b7420a0773bf9242c371f09d8899ce4c');</script>
+      <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+      <script>
+        document.getElementById('btn_download').addEventListener('click', function() {
+          html2canvas(document.getElementById('resultScreenCapture')).then(function(canvas) {
+            // 캡처한 내용을 이미지로 변환하고 이미지를 다운로드합니다.
+            var link = document.createElement('a');
+            link.download = 'result.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+          });
+        });
+        </script>
+      <footer>
+        <div class="footer-container" style="padding-bottom: 98px;">
+          <p>©NAETE</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

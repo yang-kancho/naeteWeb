@@ -1,0 +1,102 @@
+#result-container {
+  padding-top: 60px;
+  width: 100%;
+}
+
+#result-container img {
+  width: 100%;
+  max-width: 768px;
+}
+
+#resultOthers > p {
+  text-align: center;
+}
+
+#shareSection > h4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.resultShareBtn {
+  padding-top: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 20vh;
+  /* margin-top: 2vh; */
+  margin-bottom: 30px;
+}
+
+.shareUrl {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border-width: 0px;
+  background-image: url("/img/icon-url.png");
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*kakao button*/
+.kakao {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-image: url("/img/icon-kakao.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fee500;
+  border: 0px;
+  border-radius: 50px;
+}
+
+.kakao:hover,
+.kakao:focus {
+  background-color: #fee510;
+  color: #000000;
+}
+
+#add-channel-button {
+  padding: 0px;
+}
+
+#otherSection {
+  font-family: "Pretendard-Regular";
+  background-color: #ffeed9;
+}
+.retryBtn {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  height: 70px;
+  width: 90%;
+  font-size: 24px;
+  background-color: white;
+  border: 1px solid #ffd087;
+}
+.goHome {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  height: 70px;
+  width: 90%;
+  font-size: 24px;
+  background-color: white;
+  border: 1px solid #ffd087;
+}
+
+#btn_download {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  height: 70px;
+  width: 90%;
+  font-size: 24px;
+  background-color: white;
+  border: 1px solid #ffd087;
+}

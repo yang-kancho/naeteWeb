@@ -1,0 +1,106 @@
+#main {
+  background-color: #ffeed9;
+  margin: auto;
+  text-align: center;
+  /* padding: 0 5vh; */
+  padding-top: 30px;
+  /* border: 1px solid green; */
+}
+
+#main img {
+  margin: auto;
+  width: 97%;
+  border-radius: 10px;
+}
+
+.h1Title {
+  padding-top: 30px;
+  /* 헤더때문에 잘리는 여백을 여기에서 추가했음  */
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.detail_title {
+  padding-top: 75px;
+  padding-bottom: 15px;
+}
+
+.detail_explain {
+  /* border: 1px solid black; */
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  margin: auto;
+  text-align: left;
+  background-color: #ffeed9;
+}
+
+.categoryTag {
+  flex-wrap: wrap;
+  background-color: #ffeed9;
+  /* border: 1px solid purple; */
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.categoryTag > p {
+  /* margin: auto; */
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.shareBox {
+  margin: auto;
+}
+
+.mbbSec {
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: auto;
+  max-width: 45%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+.mbbSec .shareUrl {
+  margin: auto;
+}
+
+.goBack {
+  background-image: url("/img/return.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shareUrl {
+  background-image: url("/img/icon-url.png");
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#startBt {
+  width: 90%;
+  height: 70px;
+  font-size: 24px;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid #ffeed9;
+  background-color: white;
+}
